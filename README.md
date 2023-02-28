@@ -42,6 +42,7 @@
 | 35. Command in one line. Create a folder and create a text file with contents | |
 | 36. Command in one line. Move to any one folder text files that have the word “sec” in their content | |
 | 37. Command in one line. Copy to any one folder text files that have the word “sec” in their content | |
-| 38. Command in one line. Find all lines with "sec" in all text files, and copy and paste these lines into one newly created text file | |
+| 38. Command in one line. Find all lines with "sec" in all text files,
+and copy and paste these lines into one newly created text file | |
 | 39. Command in one line. Delete text files that have the word “sec” in their content | |
 | 40. Just print the line “Good job!!” | |
