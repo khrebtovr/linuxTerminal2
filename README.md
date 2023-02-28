@@ -2,13 +2,12 @@
 
 | `Description` | `Command` |
 | :---        |  :---  |
-
-| 1. Make folder dir_1 | Command |
-|  2. Go to the dir_1 folder | |
-|  3. Create folder inner_dir_1 | |
-|  4. See where you are |
-|  5. Being in the dir_1 folder, create an empty text file tf_1.txt | |
-|  6. Being in the dir_1 folder, use the cat command to create a text file tf_2.txt with the following lines: | |
+| 1. Make folder dir_1 |  |
+| 2. Go to the dir_1 folder | |
+| 3. Create folder inner_dir_1 | |
+| 4. See where you are |
+| 5. Being in the dir_1 folder, create an empty text file tf_1.txt | |
+| 6. Being in the dir_1 folder, use the cat command to create a text file tf_2.txt with the following lines: | |
 |- the first 1 | |
 |- second 2 | |
 |- the third 3 | |
