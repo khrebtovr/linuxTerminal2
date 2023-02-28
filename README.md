@@ -3,7 +3,7 @@
 | `Description` | `Command` |
 | :---        |  :---  |
 
-| 1. Make folder dir_1 | |
+| 1. Make folder dir_1 | Command |
 |  2. Go to the dir_1 folder | |
 |  3. Create folder inner_dir_1 | |
 |  4. See where you are |
