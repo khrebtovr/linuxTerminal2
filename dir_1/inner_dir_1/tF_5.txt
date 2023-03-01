@@ -1,0 +1,13 @@
+Example Functional Test Scenarios:
+Test all the mandatory fields should be validated.
+Test the asterisk sign should display for all the mandatory fields.
+Test the system should not display the error message for optional fields.
+Test that leap years are validated correctly & do not cause errors/miscalculations.
+Test the numeric fields should not accept the alphabets and proper error message should display.
+Test for negative numbers if allowed for numeric fields.
+Test division by zero should be handled properly for calculations.
+Test the max length of every field to ensure the data is not truncated.
+Test the pop up message (“This field is limited to 500 characters”) should display if the data reaches the maximum size of the field.
+Test that a confirmation message should display for update and delete operations.
+Test the amount values should display in currency format.
+Test all input fields for special characters.
