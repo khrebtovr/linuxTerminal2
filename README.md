@@ -27,23 +27,23 @@
 | 20. Clear the tf_4.txt file from the contents without deleting the file itself | **> ./inner_dir_1/tf_4.txt** |
 | 21. Find the path to files that have "tf" in their names | **find . -name "*tf*"** |
 | 22. Find the path to files that have "tf" in the name and letters in any case | **find . -iname "*tf*"** |
-| 23. Find lines in files where there is a combination of letters “sec” in the current folder | **grep "sec" *** |
-| 24. Find lines in files where there is a combination of letters “sec” in any case in the current folder | **grep -i sec *** |
-| 25. Find lines in files where there is only a combination of letters “sec” in the current folder | **** |
-| 26. Find lines in files where there is only a combination of letters “sec” in any case in the current folder | |
-| 27. Find lines in files where there is a combination of letters “second” in the current folder | |
-| 28. Find lines in files where there is a combination of letters “second” in any case in the current folder | |
-| 29. Find lines in files where there is a combination of letters “second” in all folders below the level | |
-| 30. Find only the path and file name in the lines in | |
-| which there is a combination of letters “second” in the current folder | |
-| 31. Find all lines in all files where there is no “second” combination | |
+| 23. Find lines in files where there is a combination of letters “sec” in the current folder | **grep sec * ** |
+| 24. Find lines in files where there is a combination of letters “sec” in any case in the current folder | **grep -i sec * ** |
+| 25. Find lines in files where there is only a combination of letters “sec” in the current folder | **grep -w sec * ** |
+| 26. Find lines in files where there is only a combination of letters “sec” in any case in the current folder | **grep -w -i sec * ** |
+| 27. Find lines in files where there is a combination of letters “second” in the current folder | ** grep second * ** |
+| 28. Find lines in files where there is a combination of letters “second” in any case in the current folder | ** grep -i second * ** |
+| 29. Find lines in files where there is a combination of letters “second” in all folders below the level | ** grep -r "second" / ** |
+| 30. Find only the path and file name in the lines in | **grep -rl "second" . | cut -d '/' -f 2-** |
+| which there is a combination of letters “second” in the current folder | ** grep -v -r second * ** |
+| 31. Find all lines in all files where there is no “second” combination | **  ** |
 | 32. Find only the name and path to files where there is no “second” combination | |
-| 33. Print to the terminal the last 4 lines of any text file | |
-| 34. Output to terminal 4 the first lines of any text file | |
-| 35. Command in one line. Create a folder and create a text file with contents | |
-| 36. Command in one line. Move to any one folder text files that have the word “sec” in their content | |
-| 37. Command in one line. Copy to any one folder text files that have the word “sec” in their content | |
-| 38. Command in one line. Find all lines with "sec" in all text files, | |
-| and copy and paste these lines into one newly created text file | |
-| 39. Command in one line. Delete text files that have the word “sec” in their content | |
-| 40. Just print the line “Good job!!” | |
+| 33. Print to the terminal the last 4 lines of any text file | **tail -n 4 inner_dir_1/tF_5.txt** |
+| 34. Output to terminal 4 the first lines of any text file | **head -n 4 inner_dir_1/tF_5.txt** |
+| 35. Command in one line. Create a folder and create a text file with contents | **mkdir dir_2 && echo "Hello, world!" > dir_2/hello.txt** |
+| 36. Command in one line. Move to any one folder text files that have the word “sec” in their content | **grep -l 'sec' *.txt | xargs mv -t dir_2/** |
+| 37. Command in one line. Copy to any one folder text files that have the word “sec” in their content | **grep -l 'sec' *.txt | xargs cp -t dir_2/** |
+| 38. Command in one line. Find all lines with "sec" in all text files | **find . -name "*.txt" -type f -exec grep "sec" {} \; | cat > new_file.txt** |
+| and Copy and paste these lines into one newly created text file | |
+| 39. Command in one line. Delete text files that have the word “sec” in their content | **find . -name "*.txt" -type f -exec grep -q "sec" {} \; -delete** |
+| 40. Just print the line “Good job!!” | **echo "Good job!!"** |
