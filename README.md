@@ -28,7 +28,7 @@
 | 21. Find the path to files that have "tf" in their names | **find . -name "*tf*"** |
 | 22. Find the path to files that have "tf" in the name and letters in any case | **find . -iname "*tf*"** |
 | 23. Find lines in files where there is a combination of letters “sec” in the current folder | **grep sec * ** |
-| 24. Find lines in files where there is a combination of letters “sec” in any case in the current folder | **grep -i sec * ** |
+| 24. Find lines in files where there is a combination of letters “sec” in any case in the current folder | **'grep -i sec *' ** |
 | 25. Find lines in files where there is only a combination of letters “sec” in the current folder | **grep -w sec * ** |
 | 26. Find lines in files where there is only a combination of letters “sec” in any case in the current folder | **grep -w -i sec * ** |
 | 27. Find lines in files where there is a combination of letters “second” in the current folder | ** grep second * ** |
